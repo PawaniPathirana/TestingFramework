@@ -38,6 +38,11 @@ import utility.Log;  // Import the Log class
 public class Base {
 
     public static WebDriver driver;
+    
+    
+    public static WebDriver getDriver() {
+        return driver;
+    }
     public ExtentSparkReporter sparkReporter;
     public ExtentReports extent;
     public ExtentTest logger;
