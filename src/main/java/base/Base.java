@@ -7,7 +7,7 @@ import java.net.URL;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.xml.DOMConfigurator;  // Import Log4j's DOMConfigurator
+//import org.apache.log4j.xml.DOMConfigurator;  // Import Log4j's DOMConfigurator
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -51,7 +51,7 @@ public class Base {
     @BeforeTest
     public void beforeTestMethod() {
         // Configure Log4j with the XML configuration file
-        DOMConfigurator.configure("log4j.xml"); // Add this line to configure Log4j
+        //DOMConfigurator.configure("src/main/resources/log4j2.xml"); // Add this line to configure Log4j
 
         sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + File.separator + "reports" + File.separator + "TestReport");
         extent = new ExtentReports();

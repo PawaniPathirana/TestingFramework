@@ -34,7 +34,7 @@ public interface ActionsInterface {
 	public boolean switchToOldWindow(WebDriver driver);
 	public int getColumncount(WebElement row);
 	public int getRowCount(WebElement table);
-	public boolean Alert(WebDriver driver);
+	public boolean handleAlert(WebDriver driver);
 	public boolean launchUrl(WebDriver driver,String url);
 	public boolean isAlertPresent(WebDriver driver);
 	public String getCurrentURL(WebDriver driver);

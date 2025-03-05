@@ -1,13 +1,33 @@
 package actions;
 
+import java.io.File;
+import java.io.IOException;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.Base;
 
-public class Actions extends Base implements ActionsInterface{
+public class HandleActions extends Base implements ActionsInterface{
 	
 	@Override
 	public void scrollByVisibilityOfElement(WebDriver driver, WebElement ele) {
@@ -295,7 +315,9 @@ public class Actions extends Base implements ActionsInterface{
 	public boolean switchToFrameByIndex(WebDriver driver,int index) {
 		boolean flag = false;
 		try {
-			new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
+
 			driver.switchTo().frame(index);
 			flag = true;
 			return true;
@@ -613,7 +635,7 @@ public class Actions extends Base implements ActionsInterface{
 	 * 
 	 */
 	@Override
-	public boolean Alert(WebDriver driver) {
+	public boolean handleAlert(WebDriver driver) {
 		boolean presentFlag = false;
 		Alert alert = null;
 
@@ -729,9 +751,9 @@ public class Actions extends Base implements ActionsInterface{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	@Override
-	public void explicitWait(WebDriver driver, WebElement element, int timeOut ) {
-		WebDriverWait wait = new WebDriverWait(driver,timeOut);
-		wait.until(ExpectedConditions.visibilityOf(element));
+	public void explicitWait(WebDriver driver, WebElement element, int timeOut) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
+	    wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	@Override
 	public void pageLoadTimeOut(WebDriver driver, int timeOut) {
@@ -739,24 +761,30 @@ public class Actions extends Base implements ActionsInterface{
 	}
 	@Override
 	public String screenShot(WebDriver driver, String filename) {
-		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "\\ScreenShots\\" + filename + "_" + dateName + ".png";
+	    // Generate a unique timestamp
+	    String dateName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date(0));
 
-		try {
-			FileUtils.copyFile(source, new File(destination));
-		} catch (Exception e) {
-			e.getMessage();
-		}
-		// This new path for jenkins
-		String newImageString = "http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/" + filename + "_"
-				+ dateName + ".png";
-		return newImageString;
+	    // Capture the screenshot
+	    TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+	    File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+
+	    // Define local destination path
+	    String destination = System.getProperty("user.dir") + File.separator + "ScreenShots" + File.separator + filename + "_" + dateName + ".png";
+
+	    try {
+	        FileUtils.copyFile(source, new File(destination));
+	    } catch (IOException e) {
+	        e.printStackTrace(); // Logs the error properly
+	    }
+
+	    // Jenkins image path
+	    String newImageString = "http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/" + filename + "_" + dateName + ".png";
+
+	    return newImageString;
 	}
 	@Override
 	public String getCurrentTime() {
-		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
+		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date(0));
 		return currentDate;
 	}
 

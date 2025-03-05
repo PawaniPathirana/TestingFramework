@@ -1,0 +1,5 @@
+2025-03-05 10:22:45 [main] INFO  Log - Starting Test Case: addToCartTest
+2025-03-05 10:22:47 [main] INFO  Log - Chrome driver is set up.
+2025-03-05 10:23:12 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-05 10:23:13 [main] INFO  Log - =====================================addToCartTest TEST START=========================================
+2025-03-05 10:25:09 [main] ERROR Log - Test case failed: addToCartTest
