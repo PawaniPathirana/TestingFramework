@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\USER\AppData\Local\Temp\testng-eclipse-658009676\testng-customsuite.xml</span>
+                    <span>C:\Users\USER\AppData\Local\Temp\testng-eclipse--544988955\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.AddToCartPageTest" class="method navigator-link" hash-for-method="addToCartTest(Laptop, 1, M)">addToCartTest(Laptop, 1, M)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.LoginPageTest" class="method navigator-link" hash-for-method="loginTest(rttd@gmail.com, rt@td)">loginTest(rttd@gmail.com, rt@td)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,21 +121,23 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.AddToCartPageTest</span>
+              <span class="class-name">testCases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addToCartTest(Laptop, 1, M)">
-                  </a> <!-- addToCartTest(Laptop, 1, M) -->
-                  <span class="method-name">addToCartTest</span>
-                  <span class="parameters">(Laptop,1,M)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at testCases.AddToCartPageTest.addToCartTest(AddToCartPageTest.java:37)
+                  <a name="loginTest(rttd@gmail.com, rt@td)">
+                  </a> <!-- loginTest(rttd@gmail.com, rt@td) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(rttd@gmail.com,rt@td)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Element must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.interactions.PointerInput$Origin.fromElement(PointerInput.java:277)
+	at org.openqa.selenium.interactions.Actions.moveInTicks(Actions.java:344)
+	at org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:323)
+	at actions.HandleActions.click(HandleActions.java:43)
+	at pageObjects.LoginPage.performLogin(LoginPage.java:30)
+	at testCases.LoginPageTest.loginTest(LoginPageTest.java:28)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -171,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\USER\AppData\Local\Temp\testng-eclipse-658009676\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\USER\AppData\Local\Temp\testng-eclipse--544988955\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -180,11 +182,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.AddToCartPageTest&quot;&gt;
+      &lt;class name=&quot;testCases.LoginPageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;addToCartTest&quot;/&gt;
+          &lt;include name=&quot;loginTest&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testCases.AddToCartPageTest --&gt;
+      &lt;/class&gt; &lt;!-- testCases.LoginPageTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -226,14 +228,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addToCartTest')
-data.setCell(0, 2, 'testCases.AddToCartPageTest')
-data.setCell(0, 3, 116549);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'testCases.LoginPageTest')
+data.setCell(0, 3, 9376);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -259,28 +261,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.AddToCartPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(chrome, public void testCases.AddToCartPageTest.addToCartTest(java.lang.String,java.lang.String,java...)</span>
-                <span class="method-start">287 ms</span>
+                <span class="method-name">beforeMethodMethod(chrome, public void testCases.LoginPageTest.loginTest(java.lang.String,java.lang.String) throws java...)</span>
+                <span class="method-start">218 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">addToCartTest(Laptop, 1, M)</span>
-                <span class="method-start">28166 ms</span>
+                <span class="method-name">loginTest(rttd@gmail.com, rt@td)</span>
+                <span class="method-start">32919 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=addToCartTest status=FAILURE method=AddToCartPageTest.addToCartTest(java.lang.Strin...)</span>
-                <span class="method-start">144723 ms</span>
+                <span class="method-name">afterMethod([TestResult name=loginTest status=FAILURE method=LoginPageTest.loginTest(java.lang.String,java.lang....)</span>
+                <span class="method-start">42306 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">145293 ms</span>
+                <span class="method-start">42855 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

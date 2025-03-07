@@ -1,5 +1,8 @@
 package pageObjects;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -20,6 +23,7 @@ private WebElement enterPassword;
 private WebElement loginBtn;
 
 public void performLogin (String email, String password) {
+	
 	
 	action.type(enterEmail, email);
 	action.type(enterPassword, password);

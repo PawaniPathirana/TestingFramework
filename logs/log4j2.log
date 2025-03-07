@@ -1,5 +1,57 @@
-2025-03-05 10:22:45 [main] INFO  Log - Starting Test Case: addToCartTest
-2025-03-05 10:22:47 [main] INFO  Log - Chrome driver is set up.
-2025-03-05 10:23:12 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
-2025-03-05 10:23:13 [main] INFO  Log - =====================================addToCartTest TEST START=========================================
-2025-03-05 10:25:09 [main] ERROR Log - Test case failed: addToCartTest
+2025-03-07 07:50:23 [main] INFO  Log - Starting Test Case: addToCartTest
+2025-03-07 07:50:26 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 07:50:57 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 07:50:57 [main] INFO  Log - =====================================addToCartTest TEST START=========================================
+2025-03-07 07:52:52 [main] ERROR Log - Test case failed: addToCartTest
+2025-03-07 07:52:53 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 07:52:54 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 07:53:20 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 07:53:21 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 07:56:18 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 07:56:20 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 07:56:49 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 07:56:50 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 07:57:22 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 07:57:23 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 07:57:53 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 07:57:53 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 08:45:02 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 08:45:03 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 08:45:04 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 08:45:05 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 08:45:06 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 08:45:39 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 08:46:00 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 08:46:00 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 08:46:54 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 08:46:56 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 08:47:34 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 08:47:55 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 08:52:01 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 08:52:03 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 08:52:30 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 08:52:51 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 08:59:35 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 08:59:36 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 09:00:07 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 09:00:07 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 09:00:45 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 09:00:47 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 09:01:15 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 09:01:16 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 09:02:29 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 09:02:30 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 09:02:59 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 09:03:00 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 09:04:14 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 09:04:15 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 09:04:45 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 09:04:45 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 09:10:42 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 09:10:43 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 09:11:13 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 09:11:18 [main] ERROR Log - Test case failed: loginTest
+2025-03-07 09:11:42 [main] INFO  Log - Starting Test Case: loginTest
+2025-03-07 09:11:43 [main] INFO  Log - Chrome driver is set up.
+2025-03-07 09:12:14 [main] INFO  Log - Navigated to https://www.daraz.lk/#?
+2025-03-07 09:12:24 [main] ERROR Log - Test case failed: loginTest

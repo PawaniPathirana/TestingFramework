@@ -10,5 +10,13 @@
       <class name="testCases.AddToCartPageTest"/>
     </classes>
   </test>
+  
+ <test name="loginTest">
+  <parameter name="email" value="bahjbx@gmail.com"/>
+  <parameter name="password" value="n@34"/>
+  <classes>
+    <class name="testCases.LoginPageTest"/> 
+  </classes>
+</test>
 
 </suite>

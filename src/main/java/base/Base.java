@@ -72,7 +72,7 @@ public class Base {
         driver.manage().window().maximize();
         driver.get(Base_URL.url);
         Log.info("Navigated to " + Base_URL.url);  // Log the URL navigation
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
     }
 
     @AfterMethod
